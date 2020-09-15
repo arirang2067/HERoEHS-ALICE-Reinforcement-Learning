@@ -16,6 +16,7 @@ class Env
     ros::Subscriber walking_status_sub;
     bool            walking_flag;
     double          difference_E;
+    double          similarity;
     void walkingCallback(const robotis_controller_msgs::StatusMsg::ConstPtr& msg);
 
     ros::Subscriber ref_zmp_sub;
